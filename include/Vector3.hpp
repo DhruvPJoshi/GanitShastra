@@ -34,11 +34,13 @@ namespace gs {
             float dot(const Vector3& v) const;
 
             // Cross product
-            Vector3 cross(const Vector3& v) const;
             void operator%=(const Vector3& v);
             Vector3 operator%(const Vector3& v) const;
+            Vector3 cross(const Vector3& v) const;
 
-            void Show();
+            float magnitude();
+            void normalize();
+            void Show();    // temporary
             
             // Vector components
             float x;

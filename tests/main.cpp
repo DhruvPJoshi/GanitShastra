@@ -68,5 +68,15 @@ int main()
     std::cout << "Vector1: ";
     vec1.Show();
 
+    std::cout << "===== Magnitude =====" << std::endl;
+    vec1 = gs::Vector3(2, 3, 1);
+    float magnitude = vec1.magnitude();
+    std::cout << magnitude << std::endl;
+
+    std::cout << "===== Unit Vector =====" << std::endl;
+    vec1.normalize();
+    std::cout << "Vector1: ";
+    vec1.Show();
+
     return 0;
 }
